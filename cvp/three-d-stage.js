@@ -110,13 +110,25 @@
       position: absolute;
       left: 14px;
       bottom: 14px;
-      max-width: 60%;
+      max-width: 55%;
       font-family: "JetBrains Mono Variable", "JetBrains Mono", monospace;
       font-size: 10.5px;
       line-height: 1.4;
       color: #8A857C;
       user-select: none;
       pointer-events: none;
+    }
+    @media (max-width: 640px) {
+      .note { display: none; }
+      .toolbar {
+        right: 8px;
+        bottom: 8px;
+        gap: 4px;
+      }
+      .toolbar button {
+        padding: 6px 9px;
+        font-size: 10.5px;
+      }
     }
     .err {
       position: absolute;
@@ -174,11 +186,11 @@
       this._toolbar.className = 'toolbar';
       this._objBtn = document.createElement('button');
       this._objBtn.type = 'button';
-      this._objBtn.textContent = 'Download OBJ + MTL';
+      this._objBtn.textContent = 'Unduh OBJ';
       this._objBtn.addEventListener('click', () => this._runExport('obj'));
       this._glbBtn = document.createElement('button');
       this._glbBtn.type = 'button';
-      this._glbBtn.textContent = 'Download GLB';
+      this._glbBtn.textContent = 'Unduh GLB';
       this._glbBtn.addEventListener('click', () => this._runExport('glb'));
       this._toolbar.appendChild(this._objBtn);
       this._toolbar.appendChild(this._glbBtn);
