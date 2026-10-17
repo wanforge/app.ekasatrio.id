@@ -1,5 +1,5 @@
 // CVP Monitor v3.0 — box 100 × 80 × 50 mm (PRD-CVP-v3.0)
-const BLUE = '#14365C';
+const BLUE = '#0E6B7C';
 const INK = '#0B0B0B';
 const W = 0.1, D = 0.08, H = 0.05, WALL = 0.003, Z0 = D / 2;  // wall 3.0 mm (rekomendasi)
 

@@ -100,9 +100,9 @@
       transition: all 0.15s ease;
     }
     .toolbar button:hover {
-      background: #E4ECF3;
-      border-color: #14365C;
-      color: #0A2542;
+      background: #E6F3F6;
+      border-color: #0E6B7C;
+      color: #064E5B;
     }
     .toolbar button:active { transform: translateY(1px); }
     .toolbar button[disabled] { opacity: 0.4; pointer-events: none; }
